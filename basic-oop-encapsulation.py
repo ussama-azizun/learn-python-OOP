@@ -11,15 +11,16 @@ class Employee:
     # Method Constructor
     def __init__(self, name, salary, department):
         # Public attribute
-        self._name =  name # name
-        self._salary = salary #salary
-        self._department = department #department
+        self._name =  name # Name
+        self.__salary = salary #Private salary
+        self.__department = department #Private department
+        self.__show_data() # Within class can access show_data
 
-    # Method show data
-    def _show_data(self):
+    # Method show data change to private 
+    def __show_data(self):
         print(f"Employee name {self._name}")
-        print(f"Employee salary {self._salary}")
-        print(f"Employee Department {self._department} ")
+        print(f"Employee salary {self.__salary}")
+        print(f"Employee Department {self.__department} ")
 
 
 
@@ -28,6 +29,6 @@ obj1 = Employee('Linda', 25000, 'Developer')
 obj2 = Employee('Loren', 50000, 'Manager')
 
 # %% Show data
-obj1._show_data()
+
 
 # %%
