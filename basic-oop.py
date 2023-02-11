@@ -26,7 +26,7 @@ obj2 = Employee()
 # %% Pass an parameter name and salary
 obj1.details('John', 25000, 'Developer')
 obj2.details('Xavier', 40000, 'Acountant')
-# %%
+# %% Show data methods
 obj1.show_data()
 
 # %%
