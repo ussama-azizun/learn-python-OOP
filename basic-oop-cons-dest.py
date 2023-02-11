@@ -17,9 +17,7 @@ class Employee:
         print(f"Employee salary {self.salary}")
         print(f"Employee Department {self.department} ")
     
-    # Destructor
-    def __delattr__(self, __name: str) -> None:
-        pass
+    
 
 #%% Create object
 obj1 = Employee('Linda', 25000, 'Developer')
